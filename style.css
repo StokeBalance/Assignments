@@ -1,106 +1,62 @@
-html, body {
-  height: 100%;
-  width: 100%;
- /* margin: 0;
-  box-sizing: border-box;*/
-  background: palegoldenrod;
+html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.welcome{
-  clear: both;
+body{
+  background: white;
 }
-.message{
-  clear: both;
-  text-align: center;
+.row{
+  -webkit-dispaly: flex;
+  -ms-display: flex;
+  display: flex;
+  flex-direction: row;
+  max-height: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
 }
-.welcome, .form{
-  margin-left: 12px;
+.column{
+  -webkit-flex: 33%;
+  -ms-flex: 33%;
+  flex: 33%;
+  color: white;
+  margin: auto 0;
+  /*max-height: 70%;*/
 }
-table, tr, th{
+.column.sedan{
+  background: darkorange; 
+}
+.sedan button{
+  color: darkorange;
+}
+.column.suv{
+  background: darkturquoise;
+}
+.suv button{
+  color: darkturquoise;
+}
+.column.luxury{
+  background: darkgreen;
+}
+.luxury button{
+  color: darkgreen;
+}
+.column button{
   border: none;
+  border-radius: 20px;
+  background: white;
+  width: 120px;
+  height: 30px;
+  margin-bottom: 20px;
+  align-self: flex-end;
 }
-th, td{
-  height: 48px;
+h2{
+  margin-bottom: 30px;
 }
-th{
-  text-align: left;
-  font-weight: 400;
-}
-td{
-  margin-left: 15px;
-}
-select{
-    color: rgba(0,0,0,0.5);
-    background: #ffff;
+@media (max-width: 880px){
+  .column{
+    flex: 100%;
+  }
 }
 
-input, select{
-  height: 32px;
-  border: none;
-  border-radius: 7px;
-  box-shadow: 0px 8px 5px #bbbb, 0px 12px 8px #dddd;
-  text-shadow: 0px 2px 5px #cccc, 0 4px 8px #eeee;
-}
-#email{
-  width: 120%
-}
-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  /*background: lightseagreen;*/
-  color: rgba(0,0,0, 0.4);
-  box-shadow: 0px 7px 4px #aaaa, 0px 10px 7px #bbbb;
-}
-#favcolor{
-  margin-left: 5px;
-  width: 80px;
-}
-#favcolor value{
-  border: none;
-  border-radius: 5px;
-}
-.nav p{
-  display: inline;
-  float: left;
-  width: 320px;
-  font-size: 12px;
-  margin-left: 10px;
-}
-.login{
-  float: right;
-  color: seagreen;
-  font-size: 32px;
-  margin-bottom: 20px;
-  margin-right: 12px;
-}
-.login a{
-  text-decoration: none;
-  font-size: 1.15rem; 
-  font-family: Georgia, Helvetica, sans-serif;
-  color: sandybrown;
-}
-.login button {
-  background: seagreen;
-  width: 90px; 
-}
-#final a{
-  text-decoration: none;
-  color: rgba(0,0,0,0.4);
-  font-family: Georgia, Helvetica, sans-serif;
-}
- .detail input{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  margin: auto;
-  margin-bottom: 18px;
-  
- }
